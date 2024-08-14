@@ -13,7 +13,7 @@ namespace tdd_bobs_bagels.CSharp.Main
         public bool basketIsFull = false;
         public int basketMaxSize { get; set; } = 3;
 
-        public string addBagel(string bagel)
+        public bool addBagel(string bagel)
         {
             throw new NotImplementedException();
         }

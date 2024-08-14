@@ -9,9 +9,9 @@ public class Tests
     {
         Basket basket = new Basket();
         string bagel = "cheese";
+        bool expected = true;
+        bool result = basket.addBagel(bagel);
 
-        basket.addBagel(bagel);
-
-        Assert.Pass();
+        Assert.That(expected == result);
     }
 }
