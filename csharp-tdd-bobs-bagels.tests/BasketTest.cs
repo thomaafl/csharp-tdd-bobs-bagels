@@ -28,4 +28,16 @@ public class Tests
 
         Assert.That(expected == result);
     }
+
+    [TestCase("Cheese bagel")]
+
+    public void removeBagelTest(string bagel)
+    {
+        Basket basket = new Basket();
+        bool expected = true;
+        basket.addBagel(bagel);
+        bool result = basket.removeBagel(bagel);
+
+        Assert.That(expected == result);
+    }
 }
