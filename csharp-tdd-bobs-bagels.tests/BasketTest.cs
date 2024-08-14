@@ -4,13 +4,27 @@ public class Tests
 {
 
 
-    [Test]
-    public void addBagelTest()
+    [TestCase("Cheese bagel")]
+
+    public void addBagelTest(string bagel)
     {
         Basket basket = new Basket();
-        string bagel = "cheese";
         bool expected = true;
         bool result = basket.addBagel(bagel);
+
+        Assert.That(expected == result);
+    }
+
+    [TestCase("Cheese bagel", "Turkey bagel", "Veggie bagel", "Bagel bagel")]
+
+    public void addTooManyBagelsTest(string bagel1, string bagel2, string bagel3, string bagel4)
+    {
+        Basket basket = new Basket();
+        bool expected = false;
+        basket.addBagel(bagel1);
+        basket.addBagel(bagel2);
+        basket.addBagel(bagel3);
+        bool result = basket.addBagel(bagel4);
 
         Assert.That(expected == result);
     }
