@@ -15,6 +15,7 @@ public class Tests
         Assert.That(expected == result);
     }
 
+
     [TestCase("Cheese bagel", "Turkey bagel", "Veggie bagel", "Bagel bagel")]
 
     public void addTooManyBagelsTest(string bagel1, string bagel2, string bagel3, string bagel4)
@@ -29,6 +30,7 @@ public class Tests
         Assert.That(expected == result);
     }
 
+
     [TestCase("Cheese bagel")]
 
     public void removeBagelTest(string bagel)
@@ -36,6 +38,17 @@ public class Tests
         Basket basket = new Basket();
         string expected = "bagel removed";
         basket.addBagel(bagel);
+        string result = basket.removeBagel(bagel);
+
+        Assert.That(expected == result);
+    }
+
+
+    [TestCase("Cheese bagel")]
+    public void removeNonExistantBagelTest(string bagel)
+    {
+        Basket basket = new Basket();
+        string expected = "bagel does not exist";
         string result = basket.removeBagel(bagel);
 
         Assert.That(expected == result);

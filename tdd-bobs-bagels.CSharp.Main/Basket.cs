@@ -33,5 +33,7 @@ namespace tdd_bobs_bagels.CSharp.Main
             _bagels.Remove(bagel);
             return "bagel removed";
         }
+
+        
     }
 }
