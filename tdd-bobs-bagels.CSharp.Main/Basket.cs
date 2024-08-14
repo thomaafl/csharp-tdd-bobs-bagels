@@ -9,7 +9,7 @@ namespace tdd_bobs_bagels.CSharp.Main
     public class Basket
     {
         private List<string> _bagels = new List<string>();
-
+ 
         public bool basketIsFull = false;
         public int basketMaxSize { get; set; } = 3;
 
@@ -24,9 +24,14 @@ namespace tdd_bobs_bagels.CSharp.Main
             return true;
         }
 
-        public bool removeBagel(string bagel)
+        public string removeBagel(string bagel)
         {
-            throw new NotImplementedException();
+            if (!_bagels.Contains(bagel))
+            {
+                return "bagel does not exist";
+            }
+            _bagels.Remove(bagel);
+            return "bagel removed";
         }
     }
 }

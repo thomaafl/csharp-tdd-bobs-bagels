@@ -34,9 +34,9 @@ public class Tests
     public void removeBagelTest(string bagel)
     {
         Basket basket = new Basket();
-        bool expected = true;
+        string expected = "bagel removed";
         basket.addBagel(bagel);
-        bool result = basket.removeBagel(bagel);
+        string result = basket.removeBagel(bagel);
 
         Assert.That(expected == result);
     }

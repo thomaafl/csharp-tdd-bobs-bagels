@@ -37,8 +37,8 @@ I'd like to know if I try to remove an item that doesn't exist in my basket.
 |`Basket`		  |`addBagel(String bagel)`                                         | User ordered bagel based on the type		| bool        |
 |                 |                                                                 |											|             |
 |-----------------|-----------------------------------------------------------------|-------------------------------------------|-------------|
-|`Basket`         |`removeBagels(String bagel)`										| User removed bagel from basket			| bool        |
-|                 |                                                                 | The bagel didnt exist						| bool   	  |
+|`Basket`         |`removeBagels(String bagel)`										| User removed bagel from basket			| string      |
+|                 |                                                                 | The bagel didnt exist						| string   	  |
 |-----------------|-----------------------------------------------------------------|-------------------------------------------|-------------|
 |`Basket`         |`public int basketMaxSize`                                       | Property to holding/setting the basket    | int         |
 |                 |Modify addBagel to check if full									|											| bool  	  |
