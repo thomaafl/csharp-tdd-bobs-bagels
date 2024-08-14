@@ -40,8 +40,7 @@ I'd like to know if I try to remove an item that doesn't exist in my basket.
 |`Basket`         |`removeBagels(String bagel)`										| User removed bagel from basket			| bool        |
 |                 |                                                                 | The bagel didnt exist						| bool   	  |
 |-----------------|-----------------------------------------------------------------|-------------------------------------------|-------------|
-|`Basket`         |`public bool basketIsFull`										| Property to check if the basket i full    | bool        |
-|                 |`public int basketMaxSize`                                       | Property to holding/setting the basket    | int         |
+|`Basket`         |`public int basketMaxSize`                                       | Property to holding/setting the basket    | int         |
 |                 |Modify addBagel to check if full									|											| bool  	  |
 |-----------------|-----------------------------------------------------------------|-------------------------------------------|-------------|
 |`Basket`         |`changeCapasity(int capacity)`									| Change the basketMaxSize variable         | void (none) |
