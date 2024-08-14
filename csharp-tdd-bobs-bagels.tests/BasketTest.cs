@@ -53,4 +53,13 @@ public class Tests
 
         Assert.That(expected == result);
     }
+
+    [TestCase(5)]
+
+    public void changeBasketSizeTest(int size)
+    {
+        Basket basket = new Basket();
+        int expected = 5;
+        basket.changeCapacity(5);
+    }
 }

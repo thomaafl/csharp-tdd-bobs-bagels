@@ -34,6 +34,9 @@ namespace tdd_bobs_bagels.CSharp.Main
             return "bagel removed";
         }
 
-        
+        public void changeCapacity(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
