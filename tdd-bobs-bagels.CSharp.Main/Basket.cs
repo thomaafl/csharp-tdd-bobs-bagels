@@ -10,6 +10,12 @@ namespace tdd_bobs_bagels.CSharp.Main
     {
         private List<String> _bagels = new List<String>();
 
+        public bool basketIsFull = false;
+        public int basketMaxSize { get; set; } = 3;
 
+        public string addBagel(string bagel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

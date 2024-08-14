@@ -5,8 +5,13 @@ public class Tests
 
 
     [Test]
-    public void Test1()
+    public void addBagelTest()
     {
+        Basket basket = new Basket();
+        string bagel = "cheese";
+
+        basket.addBagel(bagel);
+
         Assert.Pass();
     }
 }
