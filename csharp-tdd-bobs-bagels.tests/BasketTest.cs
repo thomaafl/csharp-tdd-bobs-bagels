@@ -61,5 +61,8 @@ public class Tests
         Basket basket = new Basket();
         int expected = 5;
         basket.changeCapacity(5);
+        int result = basket.basketMaxSize;
+
+        Assert.That(expected == result);
     }
 }
